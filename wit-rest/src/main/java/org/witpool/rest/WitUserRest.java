@@ -59,8 +59,7 @@ public class WitUserRest {
     }
 
     @GetMapping
-    public WitResult<WitUser> getUsers()
-    {
+    public WitResult<WitUser> getUsers() {
         return WitUtil.success(reposit.findAll());
     }
 }
